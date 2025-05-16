@@ -25,10 +25,10 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="/about.html" target="_blank">About</a></li>
 
                 <li><a href="#sign-in">Get Started</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/contact.html" target="_blank">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -154,57 +154,7 @@
                 </div>
             </section>
 
-            <div class="info-container" id="about">
-                <div class="left-section">
-                    <h1>About Us</h1>
-                    <p>
-                        Aqua Zuri is a GPS-enabled, community-powered water safety platform. It empowers users to find,
-                        test, report, and share water safety data using simple tools, visual inspection guidance, and
-                        crowdsourced intelligence. Aqua Zuri bridges the gap between basic water awareness and advanced
-                        monitoring
-                        through tech-enhanced solutions and educational support.
-                    </p>
-                    <h2>Our Mission</h2>
-                    <p>
-                        To provide reliable, real-time water safety information and foster community-driven solutions
-                        for clean water access.
-                    </p>
-                    <h2>Our Vision</h2>
-                    <p>
-                        A world where everyone has access to clean and safe water, regardless of their location or
-                        circumstances.
-                    </p>
-                    <h2>Tag Line</h2>
-                    <p>
-                        "Clean, Safe Water!"
-                    </p>
-                </div>
-                <div class="right-section">
-                    <div class="our-values">
-                        <h2>Our Values</h2>
-                        <ul>
-                            <li>Community: We believe in the power of community-driven solutions.</li>
-                            <li>Innovation: We embrace technology to enhance water safety.</li>
-                            <li>Integrity: We are committed to transparency and reliability.</li>
-                            <li>Empowerment: We empower individuals and communities to take charge of their water
-                                safety.</li>
-                            <li>Collaboration: We work with partners to amplify our impact.</li>
-                            <li>Education: We provide resources to help users understand water safety.</li>
-                            <li>Accessibility: We strive to make our platform available to everyone.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="meet-our-team">
-                    <h2>Meet Our Team</h2>
-                    <p>
-                        Aqua Zuri is powered by a passionate team of water safety experts, technologists, and community
-                        leaders dedicated to making a difference.
-                    </p>
-                    <img src="images/PhotoPic.webp" alt="Aqua Zuri Team" class="team-image">
-                    <h4><i>Priscilla Nzula</i></h4>
-                    <p><i>Founder & CEO</i></p>
-                </div>
-            </div>
+
 
             <section class="partners">
                 <h2>Our Partners</h2>
@@ -228,23 +178,22 @@
                 </div>
             </section>
 
-            <section id="contact">
-                <h1>Contact Us</h1>
-                <form action="https://formsubmit.co/danielpriscilla61@gmail.com" method="POST">
-                    <label for="contact-name">Name:</label>
-                    <input type="text" id="contact-name" name="name" required>
 
-                    <label for="contact-email">Email:</label>
-                    <input type="email" id="contact-email" name="email" required>
 
-                    <label for="contact-message">Message:</label>
-                    <textarea id="contact-message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
-
+            <!-- ...existing code... -->
             <section id="sign-in">
+                <form id="login-form" action="#" method="POST">
+                    <h2>Sign In</h2>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+
+                    <button type="submit">Sign In</button>
+                </form>
+                <button id="show-register-btn" class="btn btn-primary" style="margin-top: 16px;">Register</button>
+
                 <form id="register-form" action="https://formsubmit.co/danielpriscilla61@gmail.com" method="POST">
                     <h2>Register</h2>
                     <label for="reg-name">Name:</label>
@@ -266,19 +215,10 @@
                     <input type="password" id="reg-confirm-password" name="confirm-password" required>
 
                     <button type="submit">Register</button>
-                </form>
-
-                <form id="login-form" action="#" method="POST">
-                    <h2>Sign In</h2>
-                    <label for="login-email">Email:</label>
-                    <input type="email" id="login-email" name="login-email" required>
-
-                    <label for="login-password">Password:</label>
-                    <input type="password" id="login-password" name="login-password" required>
-
-                    <button type="submit">Sign In</button>
+                    <button type="button" id="hide-register-btn" style="margin-top: 10px;">Sign In</button>
                 </form>
             </section>
+
 
             <section>
                 <p><i>You can also reach us at:</i> <a href="mailto:support@aquazuri.com">support@aquazuri.com</a></p>
