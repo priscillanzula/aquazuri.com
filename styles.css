@@ -474,17 +474,6 @@ form button[type="submit"]:hover {
   display: none;
   margin-top: 24px;
 }
-/* #register-form {
-    margin-top: 24px;
-}
-#register-form, #login-form {
-    flex: 1 1 45%;
-    min-width: 280px;
-}
-#register-form h2, #login-form h2 {
-    text-align: center;
-    margin-bottom: 15px;
-    color: var(--accent); */
 
 /* Public/Restricted Content Toggle */
 #public-content,
