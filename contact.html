@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-bar">
+            <div class="logo">
+                <a href="index.html"><i>Aqua Zuri</i></a>
+            </div>
+            <div class="hamburger" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html" target="_blank">About</a></li>
+
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <form action="https://formsubmit.co/danielpriscilla61@gmail.com" method="POST">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="email" required>
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Aqua Zuri. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
